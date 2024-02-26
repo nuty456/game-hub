@@ -10,9 +10,6 @@ interface GenreListProps {
 
 const GenreList = ({onSelectGenre, selectedGenre}: GenreListProps) => {
     const {data, isLoading, error} = useGenres();
-    // if (error) return <Text>Error: {error}</Text>;
-
-    // if (isLoading) return <Spinner/>
     return (
         <>
             <Heading fontSize={'2xl'} marginBottom={3}>Genres</Heading>
