@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Button, SimpleGrid, Spinner, Text} from "@chakra-ui/react";
+import {SimpleGrid, Spinner, Text} from "@chakra-ui/react";
 import useGames from "../hooks/useGames";
 import GameCard from "./GameCard";
 import GameCardSkeleton from "./GameCardSkeleton";
