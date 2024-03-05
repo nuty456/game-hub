@@ -1,9 +1,13 @@
 import platformsList from "../data/platforms";
-import {Platform} from "./useGames";
 import {useQuery} from "@tanstack/react-query";
 import apiClient, {FetchResponse} from "../services/api-client";
 
-// const usePlatforms = () => useData<Platform>()
+export interface Platform {
+    id: number;
+    name: string;
+    slug: string;
+}
+
 const usePlatforms = () => useQuery({
     queryKey: ['platforms'],
     queryFn: () => apiClient
